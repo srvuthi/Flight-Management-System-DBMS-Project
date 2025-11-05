@@ -1,0 +1,61 @@
+
+> flight-management-backend@1.0.0 start
+> node server.js
+
+🚀 Server is running on port 5001
+📊 API available at http://localhost:5001/api
+✅ Successfully connected to MySQL database
+Error fetching tables: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rows, 
+             CREATE_TIME as created, UPDATE_TIME as updated
+      FROM in' at line 1
+    at PromisePool.query (/Users/srijanjha/Desktop/flight/backend/node_modules/mysql2/lib/promise/pool.js:36:22)
+    at /Users/srijanjha/Desktop/flight/backend/routes/dashboard.js:64:40
+    at Layer.handle [as handle_request] (/Users/srijanjha/Desktop/flight/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/srijanjha/Desktop/flight/backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/srijanjha/Desktop/flight/backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/srijanjha/Desktop/flight/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/srijanjha/Desktop/flight/backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/srijanjha/Desktop/flight/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/srijanjha/Desktop/flight/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/Users/srijanjha/Desktop/flight/backend/node_modules/express/lib/router/index.js:175:3) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sql: '\n' +
+    '      SELECT TABLE_NAME as name, TABLE_ROWS as rows, \n' +
+    '             CREATE_TIME as created, UPDATE_TIME as updated\n' +
+    '      FROM information_schema.TABLES\n' +
+    '      WHERE TABLE_SCHEMA = DATABASE()\n' +
+    '      ORDER BY TABLE_NAME\n' +
+    '    ',
+  sqlState: '42000',
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rows, \n" +
+    '             CREATE_TIME as created, UPDATE_TIME as updated\n' +
+    "      FROM in' at line 1"
+}
+Error fetching tables: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rows, 
+             CREATE_TIME as created, UPDATE_TIME as updated
+      FROM in' at line 1
+    at PromisePool.query (/Users/srijanjha/Desktop/flight/backend/node_modules/mysql2/lib/promise/pool.js:36:22)
+    at /Users/srijanjha/Desktop/flight/backend/routes/dashboard.js:64:40
+    at Layer.handle [as handle_request] (/Users/srijanjha/Desktop/flight/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/srijanjha/Desktop/flight/backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/srijanjha/Desktop/flight/backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/srijanjha/Desktop/flight/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/srijanjha/Desktop/flight/backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/srijanjha/Desktop/flight/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/srijanjha/Desktop/flight/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/Users/srijanjha/Desktop/flight/backend/node_modules/express/lib/router/index.js:175:3) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sql: '\n' +
+    '      SELECT TABLE_NAME as name, TABLE_ROWS as rows, \n' +
+    '             CREATE_TIME as created, UPDATE_TIME as updated\n' +
+    '      FROM information_schema.TABLES\n' +
+    '      WHERE TABLE_SCHEMA = DATABASE()\n' +
+    '      ORDER BY TABLE_NAME\n' +
+    '    ',
+  sqlState: '42000',
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rows, \n" +
+    '             CREATE_TIME as created, UPDATE_TIME as updated\n' +
+    "      FROM in' at line 1"
+}
